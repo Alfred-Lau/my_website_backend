@@ -1,7 +1,7 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@4.0.5
-3 info using node@v6.2.0
+2 info using npm@4.1.2
+3 info using node@v7.7.4
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle my_website_backend@0.0.0~prestart: my_website_backend@0.0.0
 6 silly lifecycle my_website_backend@0.0.0~prestart: no script for prestart, continuing
@@ -16,18 +16,18 @@
 14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:279:16)
 14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at EventEmitter.emit (events.js:194:7)
 14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:850:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+14 verbose stack     at ChildProcess.emit (events.js:194:7)
+14 verbose stack     at maybeClose (internal/child_process.js:899:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid my_website_backend@0.0.0
 16 verbose cwd /Users/alfredlau/Development/Personal Project/my_website_backend
-17 error Darwin 16.5.0
+17 error Darwin 16.6.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-19 error node v6.2.0
-20 error npm  v4.0.5
+19 error node v7.7.4
+20 error npm  v4.1.2
 21 error code ELIFECYCLE
 22 error my_website_backend@0.0.0 start: `node ./bin/www`
 22 error Exit status 1

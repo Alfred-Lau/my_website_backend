@@ -1,7 +1,12 @@
-
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
+
+var appData = require('../data/data.json')
+var seller = appData.seller;
+var goods = appData.goods;
+var ratings = appData.ratings;
+
 
 let option = {
     connectionLimit: 10,
@@ -32,6 +37,27 @@ router.get('/data', function(req, res, next) {
         })
         connection.release();
     })
+});
+
+router.get('/seller', function (req, res) {
+  res.json({
+    errno: 0,
+    data: seller,
+  })
+});
+
+router.get('/goods', function (req, res) {
+  res.json({
+    errno: 0,
+    data: goods,
+  })
+});
+
+router.get('/ratings', function (req, res) {
+  res.json({
+    errno: 0,
+    data: ratings,
+  })
 });
 
 
